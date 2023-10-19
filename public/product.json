@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/y5hNdH2/Caviar-i-Phone-12-Pro-Jobs-4-Gold.jpg",
+    "name": "iPhone 13",
+    "brand_name": "Apple",
+    "price": "$799",
+    "short_description": "The latest iPhone with a stunning display, powerful performance, and advanced camera features.",
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/fkYVTMY/Galaxy-A13-1.jpg",
+    "name": "Samsung Galaxy S21",
+    "brand_name": "Samsung",
+    "price": "$899",
+    "short_description": "A flagship Samsung phone with an exceptional camera system and high-speed performance.",
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/xXd3hjR/sony-3.jpg",
+    "name": "Xperia 1 III",
+    "brand_name": "Sony",
+    "price": "$999",
+    "short_description": "Sony's Xperia 1 III boasts a 4K OLED display, versatile camera system, and top-tier audio quality.",
+    "rating": 4.9
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/j83Z2wP/Google-Pixel-7-A-Gear-DSC-5259.jpg",
+    "name": "Google Pixel 6",
+    "brand_name": "Google",
+    "price": "$699",
+    "short_description": "Experience the pure Android experience with advanced photography and AI features.",
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "image": "https://www.bdstall.com/asset/product-image/giant_171190.jpg",
+    "name": "Intel Phone X",
+    "brand_name": "Intel",
+    "price": "$649",
+    "short_description": "Intel's first smartphone featuring powerful processing and cutting-edge technology.",
+    "rating": 4.5
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/gmL5bM1/Upcoming-Samsung-mobile-phones.jpg",
+    "name": "Samsung Galaxy A52",
+    "brand_name": "Samsung",
+    "price": "$349",
+    "short_description": "An affordable Samsung phone with a versatile camera and long-lasting battery life.",
+    "rating": 4.3
+  },
+  {
+    "id": 7,
+    "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-71687/Xperia5II-1536x1152.jpg",
+    "name": "Xperia 5 II",
+    "brand_name": "Sony",
+    "price": "$799",
+    "short_description": "Sony's compact flagship phone with a stunning display and pro-level camera features.",
+    "rating": 4.7
+  },
+  {
+    "id": 8,
+    "image": "https://m.media-amazon.com/images/I/81-fNmQqlLL._SX679_.jpg",
+    "name": "Google Pixel 5a",
+    "brand_name": "Google",
+    "price": "$449",
+    "short_description": "Affordable yet feature-packed Google phone with exceptional camera capabilities.",
+    "rating": 4.5
+  },
+  {
+    "id": 9,
+    "image": "https://www.mumoutletbd.com/wp-content/uploads/2021/04/Samsung-Galaxy-Note20-Mystic-Bronze.jpg",
+    "name": "Samsung Galaxy Note 20",
+    "brand_name": "Samsung",
+    "price": "$999",
+    "short_description": "The Note series delivers productivity with the S Pen and powerful performance.",
+    "rating": 4.8
+  },
+  {
+    "id": 10,
+    "image": "https://www.gizmochina.com/wp-content/uploads/2020/10/Apple-iPhone-12-Mini-500x500.jpg",
+    "name": "iPhone 12 Mini",
+    "brand_name": "Apple",
+    "price": "$699",
+    "short_description": "A compact iPhone with all the power of the larger models, perfect for those who prefer a smaller phone.",
+    "rating": 4.6
+  },
+  {
+    "id": 11,
+    "image": "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-4a-1.jpg",
+    "name": "Google Pixel 4a",
+    "brand_name": "Google",
+    "price": "$349",
+    "short_description": "Google's budget-friendly Pixel with exceptional camera quality and pure Android experience.",
+    "rating": 4.4
+  },
+  {
+    "id": 12,
+    "image": "https://www.mobiledokan.co/wp-content/uploads/2020/02/Sony-Xperia-10-II-Black.jpg",
+    "name": "Sony Xperia 10",
+    "brand_name": "Sony",
+    "price": "$299",
+    "short_description": "A mid-range Sony phone with a sleek design and impressive display for multimedia.",
+    "rating": 4.3
+  },
+  {
+    "id": 13,
+    "image": "https://www.mobiledokan.com/wp-content/uploads/2023/08/itel-A05s.jpg.webp",
+    "name": "Intel Phone Y",
+    "brand_name": "Intel",
+    "price": "$499",
+    "short_description": "Intel's affordable smartphone with a focus on performance and efficient multitasking.",
+    "rating": 4.4
+  },
+  {
+    "id": 14,
+    "image": "https://adminapi.applegadgetsbd.com/storage/media/large/4954-88654.jpg",
+    "name": "iPhone 11",
+    "brand_name": "Apple",
+    "price": "$699",
+    "short_description": "The iPhone 11 delivers impressive camera features and all-around performance.",
+    "rating": 4.7
+  },
+  {
+    "id": 15,
+    "image": "https://www.bdmobileprice.com/wp-content/uploads/2020/06/samsung-a71-sky-blue-specs.jpeg",
+    "name": "Samsung Galaxy A71",
+    "brand_name": "Samsung",
+    "price": "$449",
+    "short_description": "A mid-range Samsung phone with a large display, powerful processor, and versatile camera setup.",
+    "rating": 4.5
+  },
+  {
+    "id": 16,
+    "image": "https://www.zdnet.com/a/img/2019/03/29/522d22f8-3b36-40e0-b74d-5f51c088287e/sony-xperia-10-plus-header.jpg",
+    "name": "Xperia 10 Plus",
+    "brand_name": "Sony",
+    "price": "$349",
+    "short_description": "An extended version of the Xperia 10 with a larger display for multimedia enthusiasts.",
+    "rating": 4.3
+  },
+  {
+    "id": 17,
+    "image": "https://www.mobiledokan.co/wp-content/uploads/2019/05/Google-Pixel-3a.jpg",
+    "name": "Google Pixel 3a",
+    "brand_name": "Google",
+    "price": "$299",
+    "short_description": "Google's budget-friendly Pixel with a superb camera and pure Android experience.",
+    "rating": 4.2
+  },
+  {
+    "id": 18,
+    "image": "https://www.mobiledokan.co/wp-content/uploads/2019/02/Sony-Xperia-L3.jpg",
+    "name": "Sony Xperia L3",
+    "brand_name": "Sony",
+    "price": "$249",
+    "short_description": "A budget-friendly Sony phone with a sleek design and dependable performance.",
+    "rating": 4.1
+  },
+  {
+    "id": 19,
+    "image": "https://image-us.samsung.com/SamsungUS/home/mobile/phones/pdp/galaxy-z/galaxy-z-flip4/SDSAC-4730-Zflip4-Blue-01-1600x1200.jpg?$product-details-jpg$",
+    "name": "Intel Phone Z",
+    "brand_name": "Intel",
+    "price": "$399",
+    "short_description": "Intel's powerful smartphone with a focus on gaming and multimedia experiences.",
+    "rating": 4.3
+  },
+  {
+    "id": 20,
+    "image": "https://media.wired.co.uk/photos/606dba48646b991cdbf60a1d/master/w_1600,c_limit/iphone_xr_coral-back_09122018.png",
+    "name": "iPhone XR",
+    "brand_name": "Apple",
+    "price": "$599",
+    "short_description": "An iPhone with a balance of performance and affordability, perfect for everyday use.",
+    "rating": 4.6
+  }
+]
