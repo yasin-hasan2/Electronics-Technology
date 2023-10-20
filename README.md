@@ -1,8 +1,9 @@
-# React + Vite
+# Phone Hub BD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#_ This is full stack website. #_ this website build for phone selling shop #_ ======> FRONTEND <========== #_ there used javascript language #_ there also used javascript library react , react router , #_ there used HTML , CSS [framework (TAILWIND and used daisy UI for design) ] ,
+#\* there used Firebase for authentication
 
-Currently, two official plugins are available:
+#_ ======> BACKEND <========== #_ there used javascript language
+#\* there NODE JS [for data server] , MONGODB [ for data store] ,
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#\* all in all a full stack project

@@ -6,7 +6,7 @@ import Footer from "../../pages/shared/footer/Footer";
 
 const Root = () => {
   return (
-    <div className="container mx-auto  mt-10">
+    <div className=" font-roboto container mx-auto  mt-10">
       <div className=" mt-2">
         <Navbar></Navbar>
       </div>
