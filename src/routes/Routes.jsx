@@ -6,6 +6,8 @@ import Brand from "../components/pages/shared/navbar/nevItem/brand/Brand";
 import AddProduct from "../components/pages/shared/addProduct/AddProduct";
 import MyProduct from "../components/pages/myProduct/myProduct";
 import UpdateProduct from "../components/pages/shared/update/UpdateProduct";
+import SignUp from "../authentication/signUp/SignUp";
+import SignIn from "../authentication/signIn/SignIn";
 
 const Router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const Router = createBrowserRouter([
         path: "/myProduct",
         element: <MyProduct></MyProduct>,
         loader: () => fetch("http://localhost:5000/phone"),
+      },
+      {
+        path: "/singUp",
+        element: <SignUp></SignUp>,
+      },
+      {
+        path: "/singIn",
+        element: <SignIn></SignIn>,
       },
     ],
   },

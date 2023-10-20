@@ -75,9 +75,14 @@ const Navbar = () => {
             <li tabIndex={0}>
               <Link to="/add"> Add Product </Link>
             </li>
-
             <li>
               <Link to="/contact"> Contact </Link>
+            </li>
+            <li>
+              <Link to="/singUp"> Sing Up </Link>
+            </li>
+            <li>
+              <Link to="/singIn"> Sing In </Link>
             </li>
           </ul>
         </div>
