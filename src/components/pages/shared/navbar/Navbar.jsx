@@ -1,8 +1,16 @@
 // import React from 'react';
 
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../../providers/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    logOut().then().catch();
+  };
+
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -31,25 +39,15 @@ const Navbar = () => {
               <li>
                 <Link to="/"> Home </Link>
               </li>
+              <li tabIndex={0}>
+                <Link to="/myProduct">Product </Link>
+              </li>
+
+              <li tabIndex={0}>
+                <Link to="/add"> Add Product </Link>
+              </li>
               <li>
-                <Link to="/brand"> Brand </Link>
-                <ul className="p-2">
-                  <li>
-                    <Link to="/iphone"> I Phone </Link>
-                  </li>
-                  <li>
-                    <Link to="/samsung"> Samsung </Link>
-                  </li>
-                  <li>
-                    <Link to="/google"> Google </Link>
-                  </li>
-                  <li>
-                    <Link to="/sony"> Sony </Link>
-                  </li>
-                  <li>
-                    <Link to="/intel"> Intel </Link>
-                  </li>
-                </ul>
+                <Link to="/contact"> Contact </Link>
               </li>
               <li>
                 <Link to="/singUp"> Sing Up </Link>
@@ -59,9 +57,6 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/clint"> Users </Link>
-              </li>
-              <li>
-                <Link to="/contact"> Contact </Link>
               </li>
             </ul>
           </div>
@@ -78,9 +73,7 @@ const Navbar = () => {
             <li tabIndex={0}>
               <Link to="/myProduct">Product </Link>
             </li>
-            <li tabIndex={0}>
-              <Link to="/brand"> Brand </Link>
-            </li>
+
             <li tabIndex={0}>
               <Link to="/add"> Add Product </Link>
             </li>
@@ -99,7 +92,13 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn"> Log In </a>
+          {user ? (
+            <button onClick={handleSignOut}> Sign Out </button>
+          ) : (
+            <Link to="/singIn">
+              <button> Sign In </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

@@ -6,11 +6,11 @@ import Footer from "../../pages/shared/footer/Footer";
 
 const Root = () => {
   return (
-    <div className="container mx-auto border mt-10">
+    <div className="container mx-auto  mt-10">
       <div className=" mt-2">
         <Navbar></Navbar>
       </div>
-      <div>
+      <div className="mt-10">
         <Outlet></Outlet>
       </div>
       <div className=" mt-2">

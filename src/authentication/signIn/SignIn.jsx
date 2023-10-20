@@ -2,10 +2,14 @@
 
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { useLocation, useNavigate } from "react-router-dom";
 // import { data } from "autoprefixer";
 
 const SignIn = () => {
-  const { signInUser } = useContext(AuthContext);
+  const { signInUser, googleSingIn } = useContext(AuthContext);
+
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -17,6 +21,7 @@ const SignIn = () => {
     signInUser(email, password)
       .then((result) => {
         console.log(result.user);
+        navigate(location?.state ? location?.state : "/");
         const user = {
           email,
           lastLoggedAt: result.user?.metadata?.lastSignInTime,
@@ -32,6 +37,18 @@ const SignIn = () => {
           .then((data) => {
             console.log(data);
           });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  const handleLoginWithGoogle = () => {
+    googleSingIn()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        navigate(location?.state ? location?.state : "/");
       })
       .catch((error) => {
         console.error(error);
@@ -79,6 +96,12 @@ const SignIn = () => {
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>
               </div>
+              <button
+                onClick={handleLoginWithGoogle}
+                className="btn btn-primary"
+              >
+                Login with goggle
+              </button>
             </form>
           </div>
         </div>

@@ -48,18 +48,35 @@ const NewProduct = ({
 
   return (
     <div>
-      <div className="card lg:card-side bg-base-100 shadow-xl">
+      <div className=" flex  lg:card-side bg-base-100 shadow-xl">
         <figure>
-          <img className="w-96" src={photo} alt="Album" />
+          <img className="w-60 rounded-xl" src={photo} alt="Album" />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title"> {name} </h2>
-          <h2 className="card-title"> {brand} </h2>
-          <h2 className="card-title"> {price} </h2>
-          <h2 className="card-title"> {model} </h2>
-          <h2 className="card-title"> {quantity} </h2>
-          <p> {details} </p>
-          <div className="card-actions justify-end">
+        <div className="   w-[55%] flex flex-col justify-between ml-10">
+          <div className="text-[#FFFFFF] ">
+            <h2 className="card-title">
+              {" "}
+              name: <small>{name}</small>{" "}
+            </h2>
+            <h2 className="card-title">
+              {" "}
+              model: <small>{model}</small>{" "}
+            </h2>
+            <h2 className="card-title">
+              {" "}
+              brand: <small>{brand}</small>{" "}
+            </h2>
+            <h2 className="card-title">
+              {" "}
+              price: <small>{price}</small>{" "}
+            </h2>
+            <h2 className="card-title">
+              {" "}
+              Available : <small>{quantity}</small>{" "}
+            </h2>
+            <p> {details} </p>
+          </div>
+          <div className=" flex justify-end gap-2 ">
             <button className="btn btn-primary">view</button>
             <Link to={`/update/${_id}`}>
               <button className="btn btn-primary">Edit</button>

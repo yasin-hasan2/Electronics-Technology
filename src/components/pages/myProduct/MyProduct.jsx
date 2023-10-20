@@ -11,7 +11,7 @@ const MyProduct = () => {
 
   return (
     <div>
-      <div>
+      <div className="grid grid-cols-2 gap-5">
         {newAddedProducts.map((newProductData) => (
           <NewProduct
             key={newProductData._id}
