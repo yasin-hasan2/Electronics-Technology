@@ -1,5 +1,7 @@
 // import React from 'react';
 
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div>
@@ -27,51 +29,60 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>a</a>
+                <Link to="/"> Home </Link>
               </li>
               <li>
-                <a>b</a>
+                <Link to="/brand"> Brand </Link>
                 <ul className="p-2">
                   <li>
-                    <a>c</a>
+                    <Link to="/iphone"> I Phone </Link>
                   </li>
                   <li>
-                    <a>d</a>
+                    <Link to="/samsung"> Samsung </Link>
+                  </li>
+                  <li>
+                    <Link to="/google"> Google </Link>
+                  </li>
+                  <li>
+                    <Link to="/sony"> Sony </Link>
+                  </li>
+                  <li>
+                    <Link to="/intel"> Intel </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a>e</a>
+                <Link to="/contact"> Contact </Link>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn  text-[#FFFFFF] normal-case text-2xl">
+            {" "}
+            Phone Shope BD{" "}
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>a</a>
+              <Link to="/"> Home </Link>
             </li>
             <li tabIndex={0}>
-              <details>
-                <summary>b</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>h</a>
-                  </li>
-                  <li>
-                    <a>i</a>
-                  </li>
-                </ul>
-              </details>
+              <Link to="/myProduct">Product </Link>
             </li>
+            <li tabIndex={0}>
+              <Link to="/brand"> Brand </Link>
+            </li>
+            <li tabIndex={0}>
+              <Link to="/add"> Add Product </Link>
+            </li>
+
             <li>
-              <a>c</a>
+              <Link to="/contact"> Contact </Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn"> Log In </a>
         </div>
       </div>
     </div>
