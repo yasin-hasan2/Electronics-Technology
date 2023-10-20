@@ -7,7 +7,8 @@ import AddProduct from "../components/pages/shared/addProduct/AddProduct";
 import MyProduct from "../components/pages/myProduct/myProduct";
 import UpdateProduct from "../components/pages/shared/update/UpdateProduct";
 import SignUp from "../authentication/signUp/SignUp";
-import SignIn from "../authentication/signIn/SignIn";
+import SignIn from "../authentication/signin/SignIn";
+import Clint from "../components/pages/users/Clint";
 
 const Router = createBrowserRouter([
   {
@@ -46,6 +47,11 @@ const Router = createBrowserRouter([
       {
         path: "/singIn",
         element: <SignIn></SignIn>,
+      },
+      {
+        path: "/clint",
+        element: <Clint></Clint>,
+        loader: () => fetch("http://localhost:5000/users"),
       },
     ],
   },
