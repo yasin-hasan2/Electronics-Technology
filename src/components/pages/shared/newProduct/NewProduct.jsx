@@ -60,7 +60,7 @@ const NewProduct = ({
             </h2>
             <h2 className="card-title">
               {" "}
-              model: <small>{model}</small>{" "}
+              category: <small>{model}</small>{" "}
             </h2>
             <h2 className="card-title">
               {" "}
@@ -74,7 +74,7 @@ const NewProduct = ({
               {" "}
               Available : <small>{quantity}</small>{" "}
             </h2>
-            <p> {details} </p>
+            <p> Description : {details} </p>
           </div>
           <div className=" flex justify-end gap-2 ">
             <button className="btn btn-primary">view</button>
