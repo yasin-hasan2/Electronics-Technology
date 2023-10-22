@@ -60,7 +60,7 @@ const UpdateProduct = () => {
                   type="text"
                   name="name"
                   defaultValue={name}
-                  placeholder="coffee name "
+                  placeholder="Phone name "
                   className="input w-full input-bordered"
                 />
               </label>
