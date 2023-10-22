@@ -71,7 +71,7 @@ const Navbar = () => {
               <Link to="/"> Home </Link>
             </li>
             <li tabIndex={0}>
-              <Link to="/myProduct">Product </Link>
+              <Link to="/myProduct">My Cart</Link>
             </li>
 
             <li tabIndex={0}>
