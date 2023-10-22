@@ -24,7 +24,7 @@ const NewProduct = ({
     }).then((result) => {
       if (result.isConfirmed) {
         // console.log("delete confirm");
-        fetch(`http://localhost:5000/phone/${_id}`, {
+        fetch(`https://electronics-tecnology-server.vercel.app/phone/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -48,11 +48,11 @@ const NewProduct = ({
 
   return (
     <div>
-      <div className=" flex  lg:card-side bg-base-100 shadow-xl">
+      <div className=" md:flex  lg:card-side bg-base-100 shadow-xl">
         <figure>
-          <img className="w-60 rounded-xl" src={photo} alt="Album" />
+          <img className=" md:w-60 rounded-xl" src={photo} alt="Album" />
         </figure>
-        <div className="   w-[55%] flex flex-col justify-between ml-10">
+        <div className="   md:w-[55%] flex flex-col justify-between ml-10">
           <div className="text-[#FFFFFF] ">
             <h2 className="card-title">
               {" "}
@@ -60,7 +60,7 @@ const NewProduct = ({
             </h2>
             <h2 className="card-title">
               {" "}
-              category: <small>{model}</small>{" "}
+              Model: <small>{model}</small>{" "}
             </h2>
             <h2 className="card-title">
               {" "}
@@ -68,7 +68,7 @@ const NewProduct = ({
             </h2>
             <h2 className="card-title">
               {" "}
-              price: <small>{price}</small>{" "}
+              price: <small>{price} $</small>{" "}
             </h2>
             <h2 className="card-title">
               {" "}
@@ -77,7 +77,9 @@ const NewProduct = ({
             <p> Description : {details} </p>
           </div>
           <div className=" flex justify-end gap-2 ">
-            <button className="btn btn-primary">view</button>
+            <Link to={`/brand/${_id}`}>
+              <button className="btn btn-primary">view</button>
+            </Link>
             <Link to={`/update/${_id}`}>
               <button className="btn btn-primary">Edit</button>
             </Link>

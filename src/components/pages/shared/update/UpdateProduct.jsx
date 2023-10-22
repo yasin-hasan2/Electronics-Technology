@@ -25,7 +25,7 @@ const UpdateProduct = () => {
 
     //send data to the server
 
-    fetch(`http://localhost:5000/phone/${_id}`, {
+    fetch(`https://electronics-tecnology-server.vercel.app/phone/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

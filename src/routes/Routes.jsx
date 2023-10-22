@@ -10,6 +10,7 @@ import SignIn from "../authentication/signin/SignIn";
 import Clint from "../components/pages/users/Clint";
 import PrivateRoute from "./PrivateRoute";
 import Contact from "../components/pages/contact/Contact";
+import ProductDetails from "../components/pages/details/ProductDetails";
 
 const Router = createBrowserRouter([
   {
@@ -20,7 +21,8 @@ const Router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("/product.json"),
+        loader: () =>
+          fetch("https://electronics-tecnology-server.vercel.app/phone"),
       },
 
       {
@@ -35,7 +37,9 @@ const Router = createBrowserRouter([
         path: "/update/:id",
         element: <UpdateProduct></UpdateProduct>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/phone/${params.id}`),
+          fetch(
+            `https://electronics-tecnology-server.vercel.app/phone/${params.id}`
+          ),
       },
       {
         path: "/myProduct",
@@ -45,7 +49,8 @@ const Router = createBrowserRouter([
             <MyProduct></MyProduct>{" "}
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/phone"),
+        loader: () =>
+          fetch("https://electronics-tecnology-server.vercel.app/phone"),
       },
       {
         path: "/singUp",
@@ -62,7 +67,16 @@ const Router = createBrowserRouter([
             <Clint></Clint>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/users"),
+        loader: () =>
+          fetch("https://electronics-tecnology-server.vercel.app/users"),
+      },
+      {
+        path: "/brand/:_id",
+        element: <ProductDetails></ProductDetails>,
+        loader: ({ params }) =>
+          fetch(
+            `https://electronics-tecnology-server.vercel.app/phone/${params._id}`
+          ),
       },
       {
         path: "/contact",

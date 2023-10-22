@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "name":"Intel",
+        "image":"https://i.ibb.co/562wg8s/1511456208-851-intel-preview.jpg"
+    },
+    {
+        "id":2,
+        "name":"Samsung",
+        "image":"https://i.ibb.co/KW9n74z/360-197-1.png"
+    },
+    {
+        "id":3,
+        "name":"Google",
+        "image":"https://i.ibb.co/64QZc61/709ea2befcdc95124a997576b03aec14.png"
+    },
+    {
+        "id":4,
+        "name":"Sony",
+        "image":"https://i.ibb.co/cQbjpgW/athens-greece-october-4-2023-260nw-2370216695.jpg"
+    },
+    {
+        "id":5,
+        "name":"IPhone",
+        "image":"https://i.ibb.co/qNr3nkM/Symbol-of-the-i-Phone-logo.jpg"
+    }
+]

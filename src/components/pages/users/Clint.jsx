@@ -9,7 +9,7 @@ const Clint = () => {
   const [users, setUsers] = useState(usersData);
 
   const handleAddDeletedUser = (id) => {
-    fetch(`http://localhost:5000/users/${id}`, {
+    fetch(`https://electronics-tecnology-server.vercel.app/users/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
