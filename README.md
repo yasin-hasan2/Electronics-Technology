@@ -7,3 +7,6 @@
 #\* there NODE JS [for data server] , MONGODB [ for data store] ,
 
 #\* all in all a full stack project
+
+- [Git Link ](https://github.com/yasin-hasan2/Electronics-Technology)
+- [Live Link](https://phone-hub-bd.web.app/)
